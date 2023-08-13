@@ -66,7 +66,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'splitserver.wsgi.application'
+WSGI_APPLICATION = 'splitserver.wsgi.app'
+# WSGI_APPLICATION = 'splitserver.wsgi.application'
 
 
 # Database
@@ -128,4 +129,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 
-WSGI_APPLICATION = 'splitserver.wsgi.app'
