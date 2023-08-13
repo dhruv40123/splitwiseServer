@@ -129,3 +129,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 
+# Database
+
+import os
+
+MONGO_URI = os.environ.get('DB_URL')
+
+# Other Django settings ...
+
+# Connect to MongoDB using pymongo
+from pymongo import MongoClient
+
+client = MongoClient(MONGO_URI)
+db = client.get_database('SplitWise')
