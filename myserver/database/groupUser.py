@@ -1,6 +1,5 @@
 from myserver.database.groupData import updateOne
-from myserver.database.mongodb import *
-
+from myserver.database.schemas import validate_document,groupMemberSchema
 
 def addUserToGrp(uid: str, gid: str):
     doc = {

@@ -1,24 +1,16 @@
-from myserver.database.schemas import *
-from myserver.database.uniqueId import *
-from datetime import datetime
-from pymongo import MongoClient
 from django.conf import settings
+# databse 
 import ssl
+from pymongo import MongoClient
 
 
-# DB_URL = "mongodb://localhost:27017"
-# DB_URL = settings.DB_URL
-DB_URL = "mongodb+srv://dhruv4023:Azbxcz123@cluster0.imexjta.mongodb.net"
+# DB_URL = config('DB_URL')
 
-
-# adding not adding the security by Secure Socket Layer
+# DB_URL = "mongodb+srv://dhruv4023:Azbxcz123@cluster0.imexjta.mongodb.net"
+DB_URL="mongodb://127.0.0.1:27017"
 client = MongoClient(DB_URL, ssl_cert_reqs=ssl.CERT_NONE)
-# print(client)
-# DB_URL = "mongodb://localhost:27017"
-
-print("database connected successfully")
-
 db = client["SplitWise"]
+print("database connected successfully")
 
 # all collections
 users = db["users"]

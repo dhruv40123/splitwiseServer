@@ -125,4 +125,7 @@ STATICFILES_DIR = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
  # load environment variables from .env file
-# DB_URL = config('DB_URL')
+
+
+
+WSGI_APPLICATION = 'splitserver.wsgi.app'
