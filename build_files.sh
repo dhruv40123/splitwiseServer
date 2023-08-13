@@ -1,7 +1,7 @@
 
 echo "BUID START"
-python -m venv venv
+python3.9 -m venv venv
 ./venv\Scripts\activate
-python -m pip install -r requirements.txt
+python3.9 -m pip install -r requirements.txt
 echo "BUID END" 
-python manage.py runserver 
+python3.9 manage.py runserver 
