@@ -4,7 +4,7 @@ from myserver.home import *
 
 
 urlpatterns = [
-    path('user/', include('myserver.User.routes')),
-    path('entry/', include('myserver.Entries.routes')),
-    path('group/', include('myserver.Group.routes')),
+    # path('user/', include('myserver.User.routes')),
+    # path('entry/', include('myserver.Entries.routes')),
+    # path('group/', include('myserver.Group.routes')),
 ]
