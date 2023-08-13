@@ -1,5 +1,5 @@
-# from decouple import config
 import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -131,7 +131,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 # Database
 
-import os
 
 MONGO_URI = os.environ.get('DB_URL')
 
