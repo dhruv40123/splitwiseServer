@@ -1,4 +1,4 @@
-from decouple import config
+# from decouple import config
 import os
 from pathlib import Path
 
@@ -124,4 +124,4 @@ STATICFILES_DIR = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
  # load environment variables from .env file
-DB_URL = config('DB_URL')
+# DB_URL = config('DB_URL')
