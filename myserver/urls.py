@@ -3,6 +3,8 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path, include
 from myserver.home import *
+from myserver.database.mongodb import *
+
 
 urlpatterns = [
     path('user/', include('myserver.User.routes')),
