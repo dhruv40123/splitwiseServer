@@ -1,5 +1,4 @@
-
-from dotenv import load_dotenv
+from decouple import config
 import os
 from pathlib import Path
 
@@ -124,5 +123,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIR = os.path.join(BASE_DIR, 'static')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-load_dotenv()  # load environment variables from .env file
-DB_URL = os.getenv('DB_URL')
+ # load environment variables from .env file
+DB_URL = config('DB_URL')
