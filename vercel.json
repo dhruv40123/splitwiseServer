@@ -1,9 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "splitserver/**", "use": "@vercel/python" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/splitserver/asgi.py" }
-  ]
+  "builds": [{ "src": "splitserver/**", "use": "@vercel/python" }],
+  "routes": [{ "src": "/(.*)", "dest": "/splitserver/asgi.py" }]
 }
