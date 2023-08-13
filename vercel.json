@@ -4,6 +4,6 @@
     { "src": "splitserver/**", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/splitserver/myapp/asgi.py" }
+    { "src": "/(.*)", "dest": "/splitserver/asgi.py" }
   ]
 }
