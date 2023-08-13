@@ -1,10 +1,10 @@
 echo "BUILD START"
 
 # Create a virtual environment
-python3.9 -m venv venv
+# python3.9 -m venv venv
 
 # Activate the virtual environment (on Windows)
-source venv/Scripts/activate  # Use backslashes on Windows
+# source venv/Scripts/activate  # Use backslashes on Windows
 
 # Install dependencies
 python3.9 -m pip install -r requirements.txt
