@@ -1,5 +1,5 @@
-from myserver.database.groupData import updateOne
-from myserver.database.schemas import validate_document,groupMemberSchema
+from .groupData import updateOne
+from .schemas import validate_document,groupMemberSchema
 
 def addUserToGrp(uid: str, gid: str):
     doc = {

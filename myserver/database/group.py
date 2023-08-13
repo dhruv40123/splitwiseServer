@@ -1,9 +1,9 @@
 
-from myserver.database.groupData import addNewGroupDataDoc
-from myserver.database.schemas import validate_document,groupSchema
+from  .groupData import addNewGroupDataDoc
+from  .schemas import validate_document,groupSchema
 from datetime import datetime
-from myserver.database.uniqueId import generateId
-from myserver.database.mongodb import groups,groupData
+from  .uniqueId import generateId
+from  .mongodb import groups,groupData
 # to add new document
 def addNewGroup(userName: str, groupName: str):
     id=generateId()

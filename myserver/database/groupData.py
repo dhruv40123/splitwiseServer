@@ -1,7 +1,7 @@
-from myserver.database.schemas import validate_document,gropuDataSchema,entriesSchema
+from  .schemas import validate_document,gropuDataSchema,entriesSchema
 from datetime import datetime
-from myserver.database.uniqueId import getUniqueId
-from myserver.database.mongodb import groupData
+from  .uniqueId import getUniqueId
+from  .mongodb import groupData
 
 # to add new document
 
