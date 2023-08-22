@@ -138,8 +138,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # Other Django settings ...
 
 # Connect to MongoDB using pymongo
-from ssl import CERT_NONE
-from pymongo import MongoClient
+# from ssl import CERT_NONE
+# from pymongo import MongoClient
 
-client = MongoClient(MONGO_URI,ssl_cert_reqs=CERT_NONE)
-db = client.get_database('SplitWise')
+# client = MongoClient(MONGO_URI,ssl_cert_reqs=CERT_NONE)
+# db = client.get_database('SplitWise')

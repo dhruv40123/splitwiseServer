@@ -1,5 +1,5 @@
   # Import the db object
-from splitserver.settings import db  # Import the db object
+# from splitserver.settings import db  # Import the db object
 
 # databse 
 # import ssl
