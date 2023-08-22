@@ -128,12 +128,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
  # load environment variables from .env file
 
 
-
+    
 
 # Database
 
 
-MONGO_URI = os.environ.get('DB_URL')
+# MONGO_URI = os.environ.get('DB_URL')
 
 # Other Django settings ...
 
