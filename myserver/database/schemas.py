@@ -4,12 +4,14 @@ usersSchema = {
     "name": str,
     "email": str,
     "password": str,
+    # "imgId": str,
 }
 
 # schema for entriesMethods and archived collection
 groupSchema = {
     "_id": str,
     "groupName": str,
+    "imgUrl": str,
     "groupCreatedBy": str,
     "groupCreatedOn": str,
 }

@@ -1,15 +1,11 @@
-from  .schemas import validate_document,gropuDataSchema,entriesSchema
-from datetime import datetime
-from  .uniqueId import getUniqueId
-from  .mongodb import groupData
+from myserver.database.mongodb import *
+
 
 # to add new document
-
-
 def addNewGroupDataDoc(id: str):
     doc = {
         "_id": id,
-        "groupMemberss": [],
+        "groupMembers": [],
         "entries":  [],
     }
     try:
@@ -70,9 +66,15 @@ def incrementInTotalCollection(gid: str, uid: str, amt: int, spliWith: list):
 
 
 # to retrive entries
-def getentries(gid: str, startIndex: int = 0, limit: int = 10):
+def getEntries(gid: str, startIndex: int, limit: int):
     query = {"_id": gid}
-    return groupData.find_one(query, {"entries": {"$slice": [startIndex, limit]}})
+    return groupData.find_one(query, {"groupMembers": 0, "entries": {"$slice": [startIndex, limit]}})
+
+
+# to retrive groupMembers
+def getGroupMembers(gid: str):
+    query = {"_id": gid}
+    return groupData.find_one(query, {"groupMembers": 1})
 
 
 # common updateOne function
