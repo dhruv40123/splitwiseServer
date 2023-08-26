@@ -12,5 +12,14 @@
       "config": { "distDir": "staticfiles_build" }
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "splitserver/wsgi.py"
+    }
+  ]
 }
