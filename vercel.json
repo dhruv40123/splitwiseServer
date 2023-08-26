@@ -22,5 +22,5 @@
       "dest": "splitserver/wsgi.py"
     }
   ],
-  "REWRITES": [{ "SOURCE": "/(.*", "DESTINATION": "/" }]
+  "rewrites": [{ "source": "/(.*", "destination": "/" }]
 }
