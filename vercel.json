@@ -1,5 +1,5 @@
 {
-  "version":2,
+  "version": 2,
   "builds": [
     {
       "src": "splitserver/wsgi.py",
@@ -21,5 +21,6 @@
       "src": "/(.*)",
       "dest": "splitserver/wsgi.py"
     }
-  ]
+  ],
+  "REWRITES": [{ "SOURCE": "/(.*", "DESTINATION": "/" }]
 }
