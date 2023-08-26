@@ -1,10 +1,10 @@
 from myserver.database.schemas import *
 from myserver.database.uniqueId import *
-from datetime import datetime
+# from datetime import datetime
 from pymongo import MongoClient
-from django.conf import settings
+# from django.conf import settings
 import ssl
-from gridfs import GridFS
+# from gridfs import GridFS
 
 
 # DB_URL = "mongodb://127.0.0.1:27017"
@@ -25,4 +25,4 @@ db = client["SplitWise"]
 users = db["users"]
 groups = db["groups"]
 groupData = db["gropuData"]
-fs = GridFS(db, collection="imgs")
+# fs = GridFS(db, collection="imgs")
