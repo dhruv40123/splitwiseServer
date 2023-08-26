@@ -12,5 +12,5 @@
       "config": { "distDir": "staticfiles_build" }
     }
   ],
-  "rewrites": [{ "source": "/(.*", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
