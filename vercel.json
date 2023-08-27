@@ -19,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "splitwiseserver/asgi.py"
+      "dest": "splitwiseserver/wsgi.py"
     }
   ]
 }
